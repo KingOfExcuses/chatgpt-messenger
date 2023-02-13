@@ -4,7 +4,7 @@ import {
   SunIcon,
 } from "@heroicons/react/24/outline";
 
-function HomePage() {
+function HomePage(): JSX.Element {
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <div className="w-full px-6 md:max-w-3xl lg:max-w-4xl">
