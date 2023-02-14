@@ -7,3 +7,9 @@
     @apply bg-slate-700 text-white;
   }
 }
+
+@layer components {
+  .list-block {
+    @apply w-full rounded-md bg-slate-500/50 p-3 text-sm;
+  }
+}

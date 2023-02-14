@@ -6,7 +6,7 @@ import {
 
 function HomePage(): JSX.Element {
   return (
-    <div className="flex h-screen flex-col items-center justify-center">
+    <main className="flex h-screen flex-col items-center justify-center">
       <div className="w-full px-6 md:max-w-3xl lg:max-w-4xl">
         <h1 className="mx-auto mb-10 mt-6 flex w-full items-center justify-center pb-10 text-center text-4xl font-semibold">
           ChatGPT
@@ -20,18 +20,14 @@ function HomePage(): JSX.Element {
               Examples
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                &quot;Two American citizens leave the Irish pub sober. Continue
-                the joke, please.&quot;
+              <div className="list-block">
+                &quot;Explain quantum computing in simple terms.&quot;
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                &quot;I have tomatoes, potato, broccoli and eggs. What can I
-                prepare with them for a lunch?&quot;
+              <div className="list-block">
+                &quot;How do I make an HTTP request in Javascript?&quot;
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                &quot;Write a letter of resignation to my employer. The reason
-                for my resignation is that I need a more flexible schedule due
-                to family issues.&quot;
+              <div className="list-block">
+                &quot;Write a letter of resignation to my employer.&quot;
               </div>
             </ul>
           </div>
@@ -41,14 +37,14 @@ function HomePage(): JSX.Element {
               Capabilities
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
+              <div className="list-block">
                 Remembers what user said earlier in the conversation
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                Allows user to provide follow-up corrections{" "}
+              <div className="list-block">
+                Allows user to provide follow-up corrections
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                Trained to decline inappropriate requests{" "}
+              <div className="list-block">
+                Trained to decline inappropriate requests
               </div>
             </ul>
           </div>
@@ -58,20 +54,20 @@ function HomePage(): JSX.Element {
               Limitations
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
+              <div className="list-block">
                 May occasionally generate incorrect information
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
-                May occasionally produce harmful instructions or biased content
+              <div className="list-block">
+                May occasionally produce harmful instructions
               </div>
-              <div className="w-full rounded-md bg-slate-500/50 p-3 text-sm">
+              <div className="list-block">
                 Limited knowledge of events after 2021
               </div>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
