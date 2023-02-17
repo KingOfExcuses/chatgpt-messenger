@@ -15,7 +15,7 @@ export default function RootLayout({
 
           {/* Loading Notification */}
 
-          <div className="flex-1 bg-slate-700">{children}</div>
+          <div className="flex-1 bg-dark">{children}</div>
         </div>
       </body>
     </html>
