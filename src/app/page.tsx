@@ -9,14 +9,14 @@ function HomePage(): JSX.Element {
     <main className="flex h-screen flex-col items-center justify-center">
       <div className="w-full px-6 md:max-w-3xl lg:max-w-4xl">
         <h1 className="mx-auto mb-10 mt-6 flex w-full items-center justify-center pb-10 text-center text-4xl font-semibold">
-          ChatGPT
+          Chat<span className="text-blue">GPT</span>
         </h1>
         {/* Grid */}
         <div className="items-start gap-3 text-center md:flex">
           {/* Columns */}
           <div className="mb-8 flex flex-1 flex-col gap-3 md:mb-auto">
             <h2 className="m-auto flex items-center gap-3 text-lg md:flex-col md:gap-2">
-              <SunIcon className="h-8 w-8" />
+              <SunIcon className="h-8 w-8 text-blue" />
               Examples
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
@@ -33,7 +33,7 @@ function HomePage(): JSX.Element {
           </div>
           <div className="mb-8 flex flex-1 flex-col gap-3 md:mb-auto">
             <h2 className="m-auto flex items-center gap-3 text-lg md:flex-col md:gap-2">
-              <BoltIcon className="h-8 w-8" />
+              <BoltIcon className="h-8 w-8 text-blue" />
               Capabilities
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
@@ -50,7 +50,7 @@ function HomePage(): JSX.Element {
           </div>
           <div className="mb-8 flex flex-1 flex-col gap-3 md:mb-auto">
             <h2 className="m-auto flex items-center gap-3 text-lg md:flex-col md:gap-2">
-              <ExclamationTriangleIcon className="h-8 w-8" />
+              <ExclamationTriangleIcon className="h-8 w-8 text-blue" />
               Limitations
             </h2>
             <ul className="m-auto flex w-full flex-col gap-3 sm:max-w-md">
