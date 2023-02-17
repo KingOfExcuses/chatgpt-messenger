@@ -13,6 +13,6 @@
     @apply w-full rounded-md bg-gray/50 p-3 text-sm;
   }
   .chat-row {
-    @apply flex cursor-pointer items-start gap-3 rounded-md border-light px-3 py-3 text-sm transition-all duration-200 ease-out hover:bg-dark;
+    @apply flex cursor-pointer items-start gap-3 rounded-md border-light px-3 py-3 text-sm transition-all duration-200 ease-out hover:border-blue hover:bg-dark;
   }
 }
