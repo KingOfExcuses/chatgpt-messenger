@@ -6,14 +6,13 @@ export const chatsRouter = createTRPCRouter({
   createChat: publicProcedure
     .input(
       z.object({
-        text: z.string(),
+        id: z.string(),
+        content: z.string(),
       })
     )
     .mutation(async ({ input, ctx }) => {
       const chat = await ctx.prisma.chat.create({
-        data: {
-          ...input,
-        },
+        data: { id: input.id, content: input.content },
       });
 
       return chat;

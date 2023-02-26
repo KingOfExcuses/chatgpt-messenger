@@ -13,8 +13,11 @@ function Sidebar() {
         <NewChat />
         {/* OpenChats */}
         <div>{/* Model Selection */}</div>
+
         {/* Map through chat rows */}
       </div>
+
+      {/* Profile picture and sign out */}
       {session && (
         <img
           onClick={() => void signOut()}
